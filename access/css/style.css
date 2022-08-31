@@ -1345,7 +1345,8 @@ li {
     line-height: 0;
   }
   .kindroom-item-content {
-    width: 250px;
+    width: 300px;
+    height: auto;
   }
   .item-content p {
     width: 100%;

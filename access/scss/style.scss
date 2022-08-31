@@ -98,16 +98,12 @@ input,select{vertical-align:middle};li{
         height: 550px;
         width: 588px;
     }
-    .culinary-main {
-        // width: 600px; 
-    }
+
     .culinary{
         height: auto;
         padding-bottom: 40px;
     }
-    .culinary-main {
 
-    }
     .culinary-item-title {
         width: 310px;
     }    
@@ -149,9 +145,6 @@ input,select{vertical-align:middle};li{
     .footer{
         height: auto;
         padding-bottom: 20px;
-    }
-    .footer-item{
-        // padding-top: 20px;
     }
     .item-title {
         p{
@@ -216,7 +209,8 @@ input,select{vertical-align:middle};li{
             }
         }
         .kindroom-item-content{
-            width: 250px;
+            width: 300px;
+            height: auto;
         }
         .item-content {
             p{

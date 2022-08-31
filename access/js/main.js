@@ -41,7 +41,7 @@ $('.kindroom-item').slick({
             autoplay: false,
             arrows: true,
             centerMode: true,
-            slidesToShow: 1
+            slidesToShow: 3
           }
         }
       ]
@@ -106,7 +106,7 @@ $('.kindroom-item').slick({
     centerMode: true,
     centerPadding: '60px',
     variableWidth: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 3,
