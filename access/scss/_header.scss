@@ -1,0 +1,203 @@
+@import "mixin";
+.header-top{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.header__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__item--info{
+        ul{
+            display: flex;
+            align-items: center;
+
+            li{
+                padding-right: 30px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            li::before{
+                content: "\220E";
+                @include color;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                // height: 2em;
+                // margin-left: -1em;
+            }
+        }
+    }
+
+}
+.header__item--social{
+    display: flex;
+    align-items: center;
+    .social-item{
+        display: flex;
+        align-items: center;
+        .facebook{
+            padding-right: 10px;
+        }
+        .instagram{
+            @extend .facebook;
+        }
+        .youtube{
+            @extend .facebook;
+        }
+        .google{
+            @extend .facebook;
+        }
+    }
+}
+.translate {
+    margin-left: 20px;
+    .translate__item{
+        display: flex;
+        align-items: center;
+        .country-logo{
+            width: 16px;
+            height: 10.67px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D80027;
+            margin-right: 10px;
+             ion-icon{
+                color: #FFDA44;
+                font-size: 8px;
+            }
+        }
+        .country-name{
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        .change-icon{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    
+}
+.nav{
+    position: fixed;
+    z-index: 9999;
+    background: #403D38;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.nav-item{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;  
+    }
+    .menu-repon{
+        display: none;
+        .repon-item{
+            display: none;
+            color: #fff;
+            font-size: 40px;
+        }
+        .repon-item.active{
+            display: block;
+        }
+    }
+}
+.nav-menu{
+    width: 80%;
+    .list-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            position: relative;
+            a{
+                @include Montserrat-Regular;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                padding: 10px 15px;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .chirld-menu{
+                transform: translateY(85px);
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                width: 100%;
+                padding-bottom: 10px;
+                transition: all .6s;
+                background: #403D38;
+                .chirld-menu-item{
+                    padding: 15px 13px;
+                    font-size: 14px;
+                    ion-icon{
+                        padding-right: 10px;
+                        color: #fff;
+                    }
+                    .chirld-link{
+                        font-size: 14px;
+                        padding: 0;
+                        &:hover{
+                            color: #d09754  ;
+                        }
+                    }
+                }
+                &.up-width{
+                    width: 200px;
+                }
+            }
+            &:hover .chirld-menu{
+                transform: translateY(30px);
+                opacity: 1;
+                visibility: visible;
+                transition: all .6s;
+
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 33px;
+                bottom: -40px;
+            }
+        }
+        hr{
+            display: none;
+        }
+    }
+}
+.nav-advise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 80px;
+    @include colorBtn;
+    a{
+        @include Montserrat-Regular;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+}

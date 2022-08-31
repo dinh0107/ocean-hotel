@@ -1,0 +1,43 @@
+@mixin colorBtn {
+    background: #D09754;
+}
+@mixin color {
+    color: #D09754;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-display: swap;
+    src: url('../font/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    font-display: swap;
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'VNI-ShellaL';
+    font-display: swap;
+    src: url('../font/VNI-ShellaL.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'VNF-Comic Sans';
+    font-display: swap;
+    src: url('../font/VNF-Comic Sans.ttf') format('truetype');
+}
+@mixin Montserrat-Regular {
+    font-family: 'Montserrat-Regular';
+}
+@mixin Montserrat-Bold {
+    font-family: 'Montserrat-Bold';
+}
+@mixin VNI-Shella {
+    font-family: 'VNI-ShellaL';
+}
+@mixin VNF-Comic {
+    font-family: 'VNF-Comic Sans';
+}
+@mixin maxWidth($value) {
+    @media (max-width: $value) {
+        @content;
+    }
+}

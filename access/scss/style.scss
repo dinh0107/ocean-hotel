@@ -1,0 +1,278 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle};li{
+    list-style: none;
+}
+
+
+
+@import "header";
+@import "main";
+@import "footer";
+
+@include maxWidth(820px) {
+    .header-top{
+        display: none;
+    }
+    .menu-repon{
+        display: block !important;
+    }
+    .nav{
+        position: fixed;
+        z-index: 9999;
+    }
+    .nav-item{
+        display: block;
+    }
+    .list-menu{
+        transition: all .6s;
+        padding-left: 70px;
+        width: 60%;
+        height: 100vh;
+        display: block !important;
+        position: absolute;
+        left: -600px;
+        background: #403D38;
+        li{
+            padding-top: 50px;
+        }
+        &.active{
+            left: 0;
+        }
+    }
+    .nav-advise {
+        display: none;
+    }
+    .banner{
+        padding-top: 80px;
+        height: auto;
+    }
+    .banner-item{
+        img{
+            aspect-ratio: 7/3;
+        }
+    }
+    .check-in{
+        transform: translateY(-50%);
+    }
+    .check-in form{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .check-in-item{
+        width: 150px;
+    }
+    .check-in-title{
+        button{
+            font-size: 14px;
+        }
+    }
+    .about-item {
+        margin-top: 0;
+    }
+    .about-content {
+        padding-left: 0;
+        margin-top: 70px;
+        .about-btn{
+            padding-top: 40px;
+        }
+    }
+    .kindroom-main {
+        margin-top: 50px;
+    }
+    .kindroom-item-content {
+        height: 550px;
+        width: 588px;
+    }
+    .culinary-main {
+        // width: 600px; 
+    }
+    .culinary{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .culinary-main {
+
+    }
+    .culinary-item-title {
+        width: 310px;
+    }    
+    .culinary-item-img {
+        background: #fff;
+        width: 40%;
+        height: auto;
+    }
+    .spa{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .spa-information{
+        span {
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .list-spa-item {
+       margin-top: 20px;
+    }
+    .feed-back-title{
+        span{
+            font-size: 18px;
+        }
+    }
+    .new-feed {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .new-feed-img {
+        height: 250px;
+    }
+    .new-feed-item {
+        margin-top:50px;
+    }
+    .footer{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .footer-item{
+        // padding-top: 20px;
+    }
+    .item-title {
+        p{
+            padding-top: 20px;
+            font-size: 18px;
+        }
+    }
+    .footer-list  {
+        li{
+            padding-top: 30px;
+        }
+        li a{
+            font-size: 14px;
+        }
+    }
+    .map-content{
+        padding-top: 10px;
+    }
+}
+
+    @include maxWidth(468px){
+        .list-menu{
+            padding-left: 10px;
+        }
+        .nav-menu .list-menu li a{
+            font-size: 14px;
+        }
+        .banner{
+            padding-top: 80px;
+        }
+        .check-in form{
+            flex-wrap: wrap;
+            height: 87px;
+
+        }
+        .check-in-item{
+            height: 30px;
+        }
+        .check-in-title button{
+            font-size: 12px;
+        }
+        .about-content {
+            padding-left: 0;
+            margin-top: 20px;
+        }
+        .about-title{
+            p{
+                font-size: 18px;
+            }
+            span{
+                font-size: 18px;
+                line-height: 40px;
+            }
+        }
+        .kindrom-title{
+            .title{
+                font-size: 18px;
+            }
+            span{
+                font-size: 18px;
+                line-height: 0;
+            }
+        }
+        .kindroom-item-content{
+            width: 250px;
+        }
+        .item-content {
+            p{
+                width: 100%;
+            }
+        }
+        .kindrom-title p {
+            width: 100%;
+            font-size: 14px;
+        }
+        .culinary{
+            display: none;
+        }
+        .conference-title{
+            p { 
+            width: 100%;
+            }
+            span{
+                font-size: 18px;
+                line-height: 0;
+            }
+            
+        }
+        .conference-information{
+            width: 100%;
+        }
+
+        .spa-title {
+            span{
+                font-size: 18px;
+                line-height: 0;
+            }
+            p {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+        .new-feed-title{
+            span{
+                font-size: 18px;
+            }
+            h4{
+                font-size: 18px;
+                line-height: 10px;
+            }
+        }
+        .feed-back-text{
+            width: 100%;
+        }
+        .new-feed-text {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .about-img .pattern {
+            margin-right: 0;
+        }
+        
+    }
+

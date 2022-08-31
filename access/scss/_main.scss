@@ -1,0 +1,734 @@
+@import "mixin";
+.banner{
+    height: 548px;
+    width: 100%;
+}
+.banner-item{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+}
+.about{
+    padding-bottom: 50px;
+}
+.check-in{
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    transform: translate(0);
+}
+.check-in form{
+    width: 80%;
+    height: 129px;
+    margin: 0 auto;
+    // background: #fff;
+}
+.check-in form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.check-in-item{
+    display: flex;
+    width: 192px;
+    height: 49px;
+    align-items: center;
+    justify-content: center;
+    background: #F2F2F2;
+}
+.item-title{   
+    @include Montserrat-Regular;
+    border: 0;
+    outline: none;
+    background: none;
+}
+.check-in-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    ion-icon:nth-child(1){
+        color: #D09754;
+    }
+}
+.about-item{
+    margin-top: 50px;
+}
+.about-img{
+    position: relative;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .pattern{
+        position:absolute ;
+        z-index: -1;
+        top:50%;
+        transform: translateY(-50%);
+        margin-right: -40px;
+        right: 0;
+        height: 271px;
+        width: 130px;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+.about-content{
+    padding-left: 50px;
+    margin-top: 70px;
+}
+.about-title{
+    p{
+        @include VNI-Shella;
+        @include color;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 8px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    span{
+        @include Montserrat-Bold;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 82px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #482720;
+    }
+}
+.about-text{
+    // width: 390px;
+    p{
+        @include Montserrat-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+    }
+}
+
+.about-btn{
+
+    a{
+        padding: 17px 18px;
+        background: #482720;
+        color: #fff;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 85px;
+        text-transform: uppercase;
+    }
+}
+.kindroom{
+    padding-bottom: 30px;
+    background-image: url(../../access/img/backgroud-loai-phong.jpg);
+    background-size: cover;
+}
+.kindrom-title{
+    padding-top: 20px;
+    .title{
+        @include VNI-Shella;
+        color: #D09754;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    span{
+        @include Montserrat-Bold;
+        text-transform: uppercase;
+        color: #482720;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 74px;
+    }
+    .unio{
+        width: 162px;
+        margin: 0 auto;
+
+        line-height: 30px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    p{
+        @include Montserrat-Regular;
+        width: 577px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+}
+.kindroom-main{
+    margin-top: 100px;
+}
+.kindroom-item{
+    position: relative;
+    .slick-arrow{
+        position: absolute;
+        z-index: 999;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #949494;
+    }
+    .chevron-prev{
+        top: 50%;
+        transform: translateY(-50%);
+        left: -5%;
+    }
+    .chevron-next{
+        top: 50%;
+        transform: translateY(-50%);
+        right: -5%;
+    }
+    
+}
+.kindroom-item-content{
+    height: 550px;
+    width: 550px;
+    // padding: 20px;
+    .item-img{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.item-content{
+    text-align: center;
+    span{
+        @include Montserrat-Bold;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        
+    }
+    p{
+        @include Montserrat-Regular;
+        width: 400px;
+        text-align: center;
+        margin:  0 auto;
+        line-height: 20px;
+    }
+}
+.item-btn{
+    padding-top: 20px;
+    text-align: center;
+    a{
+        @include Montserrat-Bold;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 50px;
+        @include colorBtn;
+        padding: 10px 15px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.slick-center{
+    transform: scale(1.2);
+}
+.culinary{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/backgroud\ tinh\ hoa\ am\ thuc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.culinary-title{
+    color: #fff;
+    span{
+        @include Montserrat-Bold;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    .union{
+        line-height: 40px;
+    }
+    p{
+        @include Montserrat-Regular;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.culinary-list-item{
+    margin-top: 50px;
+}
+.culinary-main{
+    display: flex;
+
+}
+.culinary-item-title{
+    width: 525px;
+    background-color: #F2F2F2;
+    padding-top: 90px;
+    padding-left: 36px;
+    padding-right: 36px;
+    span{
+        @include Montserrat-Bold;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #482720;
+
+    }
+    .item-text{
+        padding-top: 35px;
+
+    }
+    p{
+        @include Montserrat-Regular;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .item-btn{
+        text-align: start;
+        padding-top: 30px;
+    }
+}
+.culinary-item-img{
+    background: #fff;
+    width: 587px;
+    height: 463px;
+    img{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.culinary-list-item{
+    position: relative;
+    .slick-arrow{
+        position: absolute;
+        z-index: 999;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        background: no-repeat;
+        border: 1px solid #949494;
+        color: #fff;
+    }
+    .chevron-prev{
+        top: 50%;
+        transform: translateY(-50%);
+        left: -5%;
+    }
+    .chevron-next{
+        top: 50%;
+        transform: translateY(-50%);
+        right: -5%;
+    }
+    
+}
+.conference{
+    width: 100%;
+    // height: 100vh;
+}
+.conference-title{
+    margin-top: 40px;
+    span{
+        @include Montserrat-Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #482720;
+    }
+    .union{
+        line-height: 30px;
+    }
+    p{
+
+        @include Montserrat-Regular;
+        margin-top: 20px;
+        width: 577px;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #403D38;
+    }
+}
+.conference-content{
+    margin-top: 50px;
+    background-image: url(../img/background\ hoi\ nghi.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 545px;
+}
+.conference-item{
+    width: 100%;
+    position: relative;
+    height: 545px;
+}
+.conference-information{
+    position: absolute;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background: #403d3892;
+    .item-btn{
+        margin-top: 40px;
+    }
+}
+.conference-text{
+    @include Montserrat-Regular;
+    padding-top: 85px;
+    width: 254px;
+    height: 288px;
+    margin: 0 auto;
+    p{
+        padding-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        color: #F9F4EE;
+    }
+}
+
+.spa{
+    padding-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background\ spa.jpg);
+    background-size: cover;
+}
+.spa-title{
+    span{
+        @include Montserrat-Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #482720; 
+    }
+    .union{
+        line-height: 30px;
+    }
+    p{
+        @include Montserrat-Regular;
+        margin:  0 auto;
+        width: 577px;           
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+.list-spa-item{
+    height: 472px;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.spa-img{
+    margin: 0 auto;
+    height: 271px;
+    width: 100%;
+    img{
+        padding: 10px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.spa-list{
+    margin-top: 40px;
+    .item-btn{
+        margin-top: 40px;
+    }
+}
+.spa-information{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    span{
+        @include Montserrat-Bold;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    p{
+        @include Montserrat-Regular;
+        padding-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+        color: #000000;
+
+    }
+}
+.feed-back{
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    height: 579px;
+    background-image: url(../img/background\ feed\ back.png);
+    background-size: cover;
+}
+.feed-back-title{
+    span{
+
+        @include Montserrat-Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .union{
+        line-height:30px;
+    }
+}
+.feed-back-item{
+    transition: all 2s;
+    height: 350px;
+}
+.feed-back-content{
+    padding-top: 20px;
+}
+.feed-back-avatar{
+    margin: 0 auto;
+    width: 114px;
+    height: 114px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+}
+.name{
+    color: #fff;
+    text-align: center;
+    span{
+        @include Montserrat-Bold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    p{
+        @include Montserrat-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+.feed-back-text{
+    @include Montserrat-Regular;
+    padding-top: 10px;
+    color: #fff;
+    width: 697px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+.star-wrapper {
+    direction: rtl;
+   a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 0;
+    color:yellow;
+  }
+}
+  
+.slick-dots {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+    li button {
+        font-size: 0;
+        width: 5px;
+        height: 5px;
+        border: 0;
+        background: #ffff;
+        outline: none;
+        margin: 0 5px;
+    }
+    li.slick-active button {
+        width: 25px;
+        height: 5px;
+        @include colorBtn;
+    }
+}
+
+.new-feed{
+    width: 100%;
+
+}
+.new-feed-title{
+    span{
+        @include VNI-Shella;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 32px;
+        text-align: center;
+        color: #D09754;
+    }
+    h4{
+        @include Montserrat-Bold;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #482720;
+    }
+    .union{
+        line-height: 30px;
+    }
+}
+.new-feed-main{
+    padding-top: 30px;
+}
+.new-feed-item{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.new-feed-text{
+    width: 577px;
+    margin: 0 auto;
+    p{
+        @include Montserrat-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #403D38;
+    }
+}
+.new-feed-img{
+    position: relative;
+    height: 180px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.new-feed-date{
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    height: 31px;
+    background: #D09754;
+    width: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        @include Montserrat-Regular;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #fff;
+    }
+}
+.new-feed-information{
+    padding: 25px;
+}
+.information-text{
+    margin-top: 20px;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: #000;
+        p{
+            @include Montserrat-Bold;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            padding-bottom: 10px;
+        }
+    }
+    
+    span{
+        @include Montserrat-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+.new-feed-more{
+    @include Montserrat-Regular;
+    cursor: pointer;
+    color: #959595;
+    padding-top: 20px;
+    
+    a{
+        display: flex;
+        align-items: center;
+        color: #959595;
+        ion-icon{
+            padding-left: 10px;
+        }
+    }
+    
+}
+.slick-slide{
+    transform:scale(0.8);
+    opacity: 0.3;
+    transition: all ease 0.5s;
+
+}
+
+.slick-slide.slick-current{
+    transform:scale(1);
+    opacity: 1.3;
+}
