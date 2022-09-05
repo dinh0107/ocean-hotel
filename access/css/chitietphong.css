@@ -1189,7 +1189,7 @@ html {
   }
   .nav {
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
   }
   .nav-item {
     display: block;
