@@ -181,12 +181,14 @@
 .kindroom-item{
     position: relative;
     .slick-arrow{
+        border: 0;
         position: absolute;
         z-index: 999;
         outline: none;
         width: 50px;
         height: 50px;
-        border: 1px solid #949494;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        // border: 1px solid #949494;
     }
     .chevron-prev{
         top: 50%;
@@ -207,12 +209,16 @@
     .item-img{
         position: relative;
         width: 100%;
+        font-size: 22pxx;
+        color: #D09754;
         img{
             width: 100%;
             object-fit: cover;
         }
         &::before{
             content: "Ocean hotel";
+            font-family: "VNI-ShellaL";
+            font-size: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -221,9 +227,15 @@
             height: 100%;
             background: #403D38;
             opacity: 0.8;
-            color: #fff;
         }
     }
+}
+.slick-center .item-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
 }
 .item-content{
     text-align: center;
@@ -251,12 +263,24 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 50px;
-        @include colorBtn;
+        border: 1px solid #959595;
         padding: 10px 15px;
-        color: #fff;
+        color: #959595;
         text-decoration: none;
     }
+    
 }
+.background-a{
+    @include colorBtn;
+    color: #fff !important;
+    border: 0 !important;
+}
+.slick-center .item-btn a{
+    background: #D09754;
+    border: 0;
+    color: #fff;
+}
+
 .slick-center{
     transform: scale(1.2);
 }
@@ -332,7 +356,7 @@
 }
 .culinary-item-img{
     background: #fff;
-    width: 587px;
+    width: 560px;
     height: 463px;
     img{
         padding: 10px;
@@ -624,7 +648,7 @@
 
 .new-feed{
     width: 100%;
-
+    padding-bottom: 40px
 }
 .new-feed-title{
     span{
@@ -748,9 +772,4 @@
 .slick-slide.slick-current{
     padding-top: 57px;
     transform:scale(1.2);
-}
-
-
-.kindroom-item-content .slick-active.img-item::before{
-    background-color: red;
 }

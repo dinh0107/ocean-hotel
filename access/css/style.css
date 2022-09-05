@@ -500,12 +500,13 @@ li {
   position: relative;
 }
 .kindroom-item .slick-arrow {
+  border: 0;
   position: absolute;
   z-index: 999;
   outline: none;
   width: 50px;
   height: 50px;
-  border: 1px solid #949494;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .kindroom-item .chevron-prev {
   top: 50%;
@@ -525,6 +526,8 @@ li {
 .kindroom-item-content .item-img {
   position: relative;
   width: 100%;
+  font-size: 22pxx;
+  color: #D09754;
 }
 .kindroom-item-content .item-img img {
   width: 100%;
@@ -532,6 +535,8 @@ li {
 }
 .kindroom-item-content .item-img::before {
   content: "Ocean hotel";
+  font-family: "VNI-ShellaL";
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,7 +545,14 @@ li {
   height: 100%;
   background: #403D38;
   opacity: 0.8;
-  color: #fff;
+}
+
+.slick-center .item-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
 .item-content {
@@ -570,10 +582,22 @@ li {
   font-weight: 600;
   font-size: 14px;
   line-height: 50px;
-  background: #D09754;
+  border: 1px solid #959595;
   padding: 10px 15px;
-  color: #fff;
+  color: #959595;
   text-decoration: none;
+}
+
+.background-a {
+  background: #D09754;
+  color: #fff !important;
+  border: 0 !important;
+}
+
+.slick-center .item-btn a {
+  background: #D09754;
+  border: 0;
+  color: #fff;
 }
 
 .slick-center {
@@ -654,7 +678,7 @@ li {
 
 .culinary-item-img {
   background: #fff;
-  width: 587px;
+  width: 560px;
   height: 463px;
 }
 .culinary-item-img img {
@@ -956,6 +980,7 @@ li {
 
 .new-feed {
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .new-feed-title span {
@@ -1083,10 +1108,6 @@ li {
 .slick-slide.slick-current {
   padding-top: 57px;
   transform: scale(1.2);
-}
-
-.kindroom-item-content .slick-active.img-item::before {
-  background-color: red;
 }
 
 .footer {
@@ -1269,8 +1290,15 @@ li {
     margin-top: 50px;
   }
   .kindroom-item-content {
-    height: 550px;
+    height: 700px;
     width: 588px;
+  }
+  .slick-slide.slick-current {
+    padding-top: 57px;
+    transform: scale(1.1);
+  }
+  .slick-dots {
+    bottom: 0;
   }
   .culinary {
     height: auto;
@@ -1278,6 +1306,7 @@ li {
   }
   .culinary-item-title {
     width: 310px;
+    padding-bottom: 10px;
   }
   .culinary-item-img {
     background: #fff;
@@ -1414,6 +1443,13 @@ li {
   }
   .about-img .pattern {
     margin-right: 0;
+  }
+  .slick-slide.slick-current {
+    padding-top: 20px;
+    transform: scale(1);
+  }
+  .slick-dots {
+    bottom: 0;
   }
 }
 

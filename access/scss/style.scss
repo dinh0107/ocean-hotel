@@ -95,10 +95,16 @@ input,select{vertical-align:middle};li{
         margin-top: 50px;
     }
     .kindroom-item-content {
-        height: 550px;
+        height: 700px;
         width: 588px;
     }
-
+    .slick-slide.slick-current {
+        padding-top: 57px;
+        transform: scale(1.1);
+    }
+    .slick-dots{
+        bottom: 0;
+    }
     .culinary{
         height: auto;
         padding-bottom: 40px;
@@ -106,6 +112,7 @@ input,select{vertical-align:middle};li{
 
     .culinary-item-title {
         width: 310px;
+        padding-bottom: 10px;
     }    
     .culinary-item-img {
         background: #fff;
@@ -267,6 +274,12 @@ input,select{vertical-align:middle};li{
         .about-img .pattern {
             margin-right: 0;
         }
-        
+        .slick-slide.slick-current {
+            padding-top: 20px;
+            transform: scale(1);
+        }
+        .slick-dots{
+            bottom: 0;
+        }
     }
 
