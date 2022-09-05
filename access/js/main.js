@@ -3,7 +3,7 @@ $('.kindroom-item').slick({
     centerPadding: '60px',
     infinite: true,
     speed: 1500,
-    // autoplay: true,  
+    autoplay: true,  
     autoplaySpeed: 2000,
     variableWidth: true,
     adaptiveHeight: true,
