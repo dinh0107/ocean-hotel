@@ -253,6 +253,7 @@ a, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 79px;
 }
 .nav-menu .list-menu li {
   position: relative;
@@ -747,6 +748,7 @@ a, a:hover {
     display: block !important;
     position: absolute;
     left: -600px;
+    top: 79px;
     background: #403D38;
   }
   .list-menu li {
@@ -794,6 +796,12 @@ a, a:hover {
   }
 }
 @media (max-width: 468px) {
+  .post-title {
+    font-size: 18px;
+  }
+  .post-main-title {
+    font-size: 14px;
+  }
   .list-menu {
     padding-left: 10px;
   }

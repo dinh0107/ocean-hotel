@@ -217,6 +217,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 79px;
 }
 .nav-menu .list-menu li {
   position: relative;

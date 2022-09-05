@@ -345,6 +345,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 79px;
 }
 .nav-menu .list-menu li {
   position: relative;
@@ -1201,6 +1202,7 @@ html {
     display: block !important;
     position: absolute;
     left: -600px;
+    top: -79px;
     background: #403d38;
   }
   .list-menu li {
@@ -1208,6 +1210,7 @@ html {
   }
   .list-menu.active {
     left: 0;
+    top: 78px;
   }
   .nav-advise {
     display: none;
@@ -1307,6 +1310,16 @@ html {
   }
   .banner-item img {
     height: 100%;
+  }
+  .chevron-next {
+    right: 0;
+  }
+  .chevron-prev {
+    left: 0;
+  }
+  .slick-arrow {
+    color: #fff;
+    background-color: rgba(75, 74, 74, 0.4);
   }
   .list-tag {
     height: auto;

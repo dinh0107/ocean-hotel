@@ -253,6 +253,10 @@ a, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 79px;
+}
+.nav-menu .list-menu li {
+  position: relative;
 }
 .nav-menu .list-menu li a {
   font-family: "Montserrat-Regular";
@@ -263,6 +267,50 @@ a, a:hover {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+}
+.nav-menu .list-menu li .chirld-menu {
+  transform: translateY(85px);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 10px;
+  transition: all 0.6s;
+  background: #403D38;
+}
+.nav-menu .list-menu li .chirld-menu .chirld-menu-item {
+  padding: 15px 13px;
+  font-size: 14px;
+}
+.nav-menu .list-menu li .chirld-menu .chirld-menu-item ion-icon {
+  padding-right: 10px;
+  color: #fff;
+}
+.nav-menu .list-menu li .chirld-menu .chirld-menu-item .chirld-link {
+  font-size: 14px;
+  padding: 0;
+}
+.nav-menu .list-menu li .chirld-menu .chirld-menu-item .chirld-link:hover {
+  color: #d09754;
+}
+.nav-menu .list-menu li .chirld-menu.up-width {
+  width: 200px;
+}
+.nav-menu .list-menu li:hover .chirld-menu {
+  transform: translateY(30px);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s;
+}
+.nav-menu .list-menu li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 33px;
+  bottom: -40px;
+}
+.nav-menu .list-menu hr {
+  display: none;
 }
 
 .nav-advise {
@@ -688,6 +736,7 @@ a, a:hover {
     display: block !important;
     position: absolute;
     left: -600px;
+    top: 78px;
     background: #403D38;
   }
   .list-menu li {

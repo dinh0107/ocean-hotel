@@ -822,12 +822,14 @@ html {
         display: block !important;
         position: absolute;
         left: -600px;
+        top: -79px;
         background: #403d38;
         li {
             padding-top: 50px;
         }
         &.active {
             left: 0;
+            top: 78px;
         }
     }
     .nav-advise {
@@ -941,6 +943,16 @@ html {
         img {
             height: 100%;
         }
+    }
+    .chevron-next{
+        right: 0;
+    }
+    .chevron-prev{
+        left: 0;
+    }
+    .slick-arrow{
+        color: #fff;
+        background-color: #4b4a4a66;
     }
     .list-tag {
         height: auto;
