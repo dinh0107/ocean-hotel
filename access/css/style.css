@@ -961,7 +961,7 @@ li {
   display: flex;
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 0;
   transform: translateX(-50%);
 }
 .slick-dots li button {
