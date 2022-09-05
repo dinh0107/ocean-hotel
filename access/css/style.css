@@ -1247,6 +1247,7 @@ li {
     display: block !important;
     position: absolute;
     left: -600px;
+    top: 79px;
     background: #403D38;
   }
   .list-menu li {
