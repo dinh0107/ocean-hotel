@@ -450,6 +450,7 @@ li {
 }
 
 .kindroom {
+  background-attachment: fixed;
   padding-bottom: 30px;
   background-image: url(../../access/img/backgroud-loai-phong.jpg);
   background-size: cover;
