@@ -88,7 +88,7 @@ $('.kindroom-item').slick({
           settings: {
             arrows: true,
             centerMode: true,
-            slidesToShow: 3
+            slidesToShow: 1
           }
         }
       ]
