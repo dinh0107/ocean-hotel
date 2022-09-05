@@ -196,15 +196,7 @@ carIcon.addEventListener('click', accordionIcon);
 
 
 
-const content = document.querySelector('.main-content');
-scrollnav.init(content);
+// document.documentElement.scrollTop = document.body.scrollTop = 1000;
 
 
 
-// const listBar = document.querySelectorAll('.scrollbar__item')
-// function scrollBar(){
-//   for ( i = 0; i < listBar.length; i++){
-//     listBar[i].classList.toggle('active')
-//   }
-// }
-// document.getElementsByClassName('.scrollbar__item a').addEventListener('click', scrollBar)
