@@ -194,6 +194,16 @@ input,select{vertical-align:middle};li{
         .check-in-title button{
             font-size: 12px;
         }
+        .kindroom-item .slick-arrow{
+            width: 40px;
+            height: 40px;
+        }
+        .kindroom-item .chevron-prev{
+            left: 0;
+        }
+        .kindroom-item .chevron-next{
+            right: 0;
+        }
         .about-content {
             padding-left: 0;
             margin-top: 20px;
@@ -278,6 +288,7 @@ input,select{vertical-align:middle};li{
         .slick-slide.slick-current {
             padding-top: 20px;
             transform: scale(1);
+            transition: all .8s;
         }
         .slick-dots{
             bottom: 0;
