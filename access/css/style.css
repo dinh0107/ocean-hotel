@@ -1410,6 +1410,9 @@ li {
     flex-wrap: wrap;
     height: 87px;
   }
+  .check-in-title {
+    justify-content: center;
+  }
   .check-in-item {
     height: 30px;
   }
