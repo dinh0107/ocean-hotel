@@ -108,7 +108,7 @@ $('.kindroom-item').slick({
     centerMode: true,
     // centerPadding: '60px',
     variableWidth: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 3000,
     infinite: true,
