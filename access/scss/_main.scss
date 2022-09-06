@@ -213,10 +213,11 @@
     .item-img{
         position: relative;
         width: 100%;
-        font-size: 22pxx;
+        
         color: #D09754;
         img{
             width: 100%;
+            height: 100%;
             object-fit: cover;
         }
         &::before{
@@ -248,6 +249,10 @@
     p{
         font-size: 14px;
     }
+}
+.slick-center .item-img{
+    height: 250px;
+    
 }
 .item-content{
     text-align: center;
