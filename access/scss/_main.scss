@@ -241,6 +241,14 @@
     height: 100%;
     background-color: transparent;
 }
+.slick-center .item-content {
+    span{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
 .item-content{
     text-align: center;
     span{
@@ -283,6 +291,9 @@
     background: #D09754;
     border: 0;
     color: #fff;
+    padding: 8px 12px;
+    font-weight: 400 !important;
+    font-size: 12px;
 }
 
 .slick-center{
