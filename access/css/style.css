@@ -179,6 +179,7 @@ li {
 }
 
 .nav {
+  overflow: hidden;
   position: fixed;
   z-index: 9999;
   background: #403D38;
