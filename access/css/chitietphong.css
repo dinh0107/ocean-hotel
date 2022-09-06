@@ -1365,6 +1365,7 @@ html {
   }
   .overview-description {
     padding-top: 11px;
+    text-align: center;
   }
   .convenient p {
     font-size: 18px;
