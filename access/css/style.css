@@ -527,8 +527,7 @@ li {
 }
 
 .kindroom-item-content {
-  height: 550px;
-  width: 400px;
+  width: 350px;
 }
 .kindroom-item-content .item-img {
   position: relative;
@@ -574,7 +573,7 @@ li {
 }
 .item-content p {
   font-family: "Montserrat-Regular";
-  width: 400px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   line-height: 20px;
@@ -649,12 +648,11 @@ li {
 }
 
 .culinary-item.slick-slide.slick-current {
-  padding: 10px;
   transform: scale(1);
 }
 
 .culinary-item-title {
-  width: 525px;
+  width: 533px;
   background-color: #F2F2F2;
   padding-top: 90px;
   padding-left: 36px;
@@ -685,7 +683,7 @@ li {
 
 .culinary-item-img {
   background: #fff;
-  width: 560px;
+  width: 565px;
   height: 463px;
 }
 .culinary-item-img img {
@@ -969,7 +967,7 @@ li {
   display: flex;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 100px;
   transform: translateX(-50%);
 }
 .slick-dots li button {
@@ -1109,13 +1107,12 @@ li {
 }
 
 .slick-slide {
-  transform: scale(0.8);
+  margin: 40px 20px;
   opacity: 1;
   transition: all ease 0.5s;
 }
 
 .slick-slide.slick-current {
-  padding-top: 57px;
   transform: scale(1.2);
   transition: all ease 0.5s;
 }
@@ -1304,9 +1301,11 @@ li {
     margin-top: 50px;
   }
   .kindroom-item-content {
-    height: 700px;
     width: 588px;
     transition: all 1s;
+  }
+  .slick-slide {
+    margin: 40px 30px;
   }
   .kindroom-item .chevron-next {
     right: 0;
@@ -1315,11 +1314,10 @@ li {
     left: 0;
   }
   .slick-slide.slick-current {
-    padding-top: 57px;
     transform: scale(1);
   }
   .slick-dots {
-    bottom: 0;
+    bottom: 100px;
   }
   .culinary {
     height: auto;
@@ -1349,6 +1347,9 @@ li {
   }
   .feed-back-title span {
     font-size: 18px;
+  }
+  .feed-back-text {
+    width: auto;
   }
   .new-feed {
     padding-bottom: 50px;
@@ -1398,7 +1399,7 @@ li {
   .check-in-title button {
     font-size: 12px;
   }
-  .kindroom-item .slick-arrow {
+  .kindroom-item.slick-arrow {
     width: 40px;
     height: 40px;
   }
@@ -1428,7 +1429,6 @@ li {
   }
   .kindroom-item-content {
     width: 345px;
-    height: auto;
   }
   .item-content p {
     width: 100%;
@@ -1476,13 +1476,15 @@ li {
   .about-img .pattern {
     margin-right: 0;
   }
-  .slick-slide.slick-current {
-    padding-top: 20px;
+  .slick-center {
+    transform: scale(1);
+  }
+  .slick-active.slick-center {
     transform: scale(1);
     transition: all ease 0.8s;
   }
   .slick-dots {
-    bottom: 0;
+    bottom: 50px;
   }
 }
 

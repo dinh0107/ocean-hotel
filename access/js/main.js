@@ -2,7 +2,7 @@ $('.kindroom-item').slick({
     centerMode: true,
     centerPadding: '60px',
     infinite: true,
-    speed: 3000,
+    speed: 2000,
     autoplay: true,  
     autoplaySpeed: 3000,
     variableWidth: true,
@@ -51,7 +51,7 @@ $('.kindroom-item').slick({
     centerMode: false,
     infinite: true,
     speed: 3000,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     variableWidth: true,
     // adaptiveHeight: true,
@@ -94,7 +94,7 @@ $('.kindroom-item').slick({
       ]
   });
   $('.feed-back-content').slick({
-    autoplay: true,
+    autoplay: true ,
     autoplaySpeed: 4000,
     speed: 3000,
     infinite: true,

@@ -208,8 +208,7 @@
     
 }
 .kindroom-item-content{
-    height: 550px;
-    width: 400px;
+    width: 350px;
     // padding: 20px;
     .item-img{
         position: relative;
@@ -254,7 +253,7 @@
     }
     p{
         @include Montserrat-Regular;
-        width: 400px;
+        width: 100%     ;
         text-align: center;
         margin:  0 auto;
         line-height: 20px;
@@ -324,11 +323,10 @@
 
 }
 .culinary-item.slick-slide.slick-current{
-    padding: 10px;
     transform:scale(1);
 }
 .culinary-item-title{
-    width: 525px;
+    width: 533px;
     background-color: #F2F2F2;
     padding-top: 90px;
     padding-left: 36px;
@@ -361,7 +359,7 @@
 }
 .culinary-item-img{
     background: #fff;
-    width: 560px;
+    width: 565px;
     height: 463px;
     img{
         padding: 10px;
@@ -635,7 +633,7 @@
 	display: flex;
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: 100px;
 	transform: translateX(-50%);
     li button {
         font-size: 0;
@@ -770,14 +768,13 @@
     
 }
 .slick-slide{
-    transform:scale(0.8);
+    margin: 40px 20px;
     opacity: 1;
     transition: all ease 0.5s;
     
 }
 
 .slick-slide.slick-current{
-    padding-top: 57px;
     transform:scale(1.2);
     transition: all ease 0.5s;
     

@@ -100,9 +100,11 @@ input,select{vertical-align:middle};li{
         margin-top: 50px;
     }
     .kindroom-item-content {
-        height: 700px;
         width: 588px;
         transition: all 1s;
+    }
+    .slick-slide{
+        margin: 40px 30px;
     }
     .kindroom-item .chevron-next{
         right: 0;
@@ -111,11 +113,10 @@ input,select{vertical-align:middle};li{
         left: 0;
     }
     .slick-slide.slick-current {
-        padding-top: 57px;
         transform: scale(1);
     }
     .slick-dots{
-        bottom: 0;
+        bottom: 100px;
     }
     .culinary{
         height: auto;
@@ -150,6 +151,9 @@ input,select{vertical-align:middle};li{
         span{
             font-size: 18px;
         }
+    }
+    .feed-back-text{
+        width: auto;
     }
     .new-feed {
         padding-bottom: 50px;
@@ -205,9 +209,11 @@ input,select{vertical-align:middle};li{
         .check-in-title button{
             font-size: 12px;
         }
-        .kindroom-item .slick-arrow{
-            width: 40px;
-            height: 40px;
+        .kindroom-item {
+            &.slick-arrow {
+                width: 40px;
+                height: 40px;
+            }
         }
         .kindroom-item .chevron-prev{
             left: 0;
@@ -239,7 +245,6 @@ input,select{vertical-align:middle};li{
         }
         .kindroom-item-content{
             width: 345px;
-            height: auto;
         }
         .item-content {
             p{
@@ -297,13 +302,15 @@ input,select{vertical-align:middle};li{
         .about-img .pattern {
             margin-right: 0;
         }
-        .slick-slide.slick-current {
-            padding-top: 20px;
+        .slick-center{
+            transform: scale(1);
+        }
+        .slick-active.slick-center {
             transform: scale(1);
             transition: all ease .8s;
         }
         .slick-dots{
-            bottom: 0;
+            bottom: 50px;
         }
     }
 
