@@ -176,12 +176,16 @@
     }
     
 }
+.kindroom-item>.kindroom-item-content:not(:first-child){
+    display: none;
+}
 .kindroom-main{
     margin-top: 100px;
 }
 .kindroom-item{
     position: relative;
     .slick-arrow{
+        border-radius: 5px;
         border: 0;
         position: absolute;
         z-index: 999;
@@ -775,4 +779,6 @@
 .slick-slide.slick-current{
     padding-top: 57px;
     transform:scale(1.2);
+    transition: all ease 0.5s;
+    
 }

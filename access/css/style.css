@@ -494,6 +494,10 @@ li {
   text-align: center;
 }
 
+.kindroom-item > .kindroom-item-content:not(:first-child) {
+  display: none;
+}
+
 .kindroom-main {
   margin-top: 100px;
 }
@@ -502,6 +506,7 @@ li {
   position: relative;
 }
 .kindroom-item .slick-arrow {
+  border-radius: 5px;
   border: 0;
   position: absolute;
   z-index: 999;
@@ -1112,6 +1117,7 @@ li {
 .slick-slide.slick-current {
   padding-top: 57px;
   transform: scale(1.2);
+  transition: all ease 0.5s;
 }
 
 .footer {
@@ -1284,6 +1290,9 @@ li {
   .about-item {
     margin-top: 0;
   }
+  .about-img .pattern {
+    margin-right: -10px;
+  }
   .about-content {
     padding-left: 0;
     margin-top: 70px;
@@ -1297,10 +1306,17 @@ li {
   .kindroom-item-content {
     height: 700px;
     width: 588px;
+    transition: all 1s;
+  }
+  .kindroom-item .chevron-next {
+    right: 0;
+  }
+  .kindroom-item .chevron-prev {
+    left: 0;
   }
   .slick-slide.slick-current {
     padding-top: 57px;
-    transform: scale(1.1);
+    transform: scale(1);
   }
   .slick-dots {
     bottom: 0;
@@ -1310,7 +1326,7 @@ li {
     padding-bottom: 40px;
   }
   .culinary-item-title {
-    width: 310px;
+    width: 300px;
     padding-bottom: 10px;
   }
   .culinary-item-img {
@@ -1416,6 +1432,7 @@ li {
   }
   .item-content p {
     width: 100%;
+    font-size: 14px;
   }
   .kindrom-title p {
     width: 100%;
@@ -1462,7 +1479,7 @@ li {
   .slick-slide.slick-current {
     padding-top: 20px;
     transform: scale(1);
-    transition: all 0.8s;
+    transition: all ease 0.8s;
   }
   .slick-dots {
     bottom: 0;

@@ -2,9 +2,9 @@ $('.kindroom-item').slick({
     centerMode: true,
     centerPadding: '60px',
     infinite: true,
-    speed: 1500,
+    speed: 3000,
     autoplay: true,  
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     variableWidth: true,
     adaptiveHeight: true,
     slidesToShow: 3,
@@ -23,8 +23,8 @@ $('.kindroom-item').slick({
           breakpoint: 768,
           settings: {
             arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
+            // centerMode: true,
+            // centerPadding: '40px',
             slidesToShow: 3
           }
         },
@@ -50,9 +50,9 @@ $('.kindroom-item').slick({
   $('.culinary-list-item').slick({
     centerMode: false,
     infinite: true,
-    speed: 1500,
-    autoplay: true,
-    autoplaySpeed: 1000,
+    speed: 3000,
+    // autoplay: true,
+    autoplaySpeed: 3000,
     variableWidth: true,
     // adaptiveHeight: true,
     slidesToShow: 1,
@@ -73,7 +73,7 @@ $('.kindroom-item').slick({
             arrows: false,
             // centerMode: true,
             // centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 1
           }
         },
         {
@@ -96,6 +96,7 @@ $('.kindroom-item').slick({
   $('.feed-back-content').slick({
     autoplay: true,
     autoplaySpeed: 4000,
+    speed: 3000,
     infinite: true,
     slidesToShow: 1,
     dots:true,
@@ -105,10 +106,11 @@ $('.kindroom-item').slick({
 
   $('.list-banner').slick({
     centerMode: true,
-    centerPadding: '60px',
+    // centerPadding: '60px',
     variableWidth: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
+    speed: 3000,
     infinite: true,
     slidesToShow: 3,
     dots:true,
